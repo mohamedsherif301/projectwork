@@ -1,0 +1,14 @@
+
+
+div#SocialLinks{
+  transition: 1s !important ;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div#SocialLinks:hover {
+    width: 20rem;
+    border-radius: 20px;
+
+}

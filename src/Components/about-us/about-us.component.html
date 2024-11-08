@@ -1,0 +1,41 @@
+
+    <div id="about" class="bg-gray-900  flex flex-col   items-center justify-center text-center   ">
+        <div class="text-white">
+            <h1 class="text-4xl font-bold">Domain For Sale</h1>
+            <p class="mt-4 text-lg">Interested in purchasing? Contact us!</p>
+        </div>
+        <div class="mt-8">
+            <form (ngSubmit)="onSubmit()" #contactForm="ngForm"  class="flex flex-col items-center">
+
+                <input   type="text"
+                id="email"
+                name="email"
+                [(ngModel)]="formData.email"
+                required
+                #email="ngModel" placeholder="Your Email Address" class="py-4 px-28 md:py-2 sm:py-2 text-center bg-gray-800 text-white rounded-md focus:outline-none mb-4" required />
+                <textarea       id="message"
+                name="message"
+                [(ngModel)]="formData.message"
+                required
+                #message="ngModel"
+                 placeholder="Your Message" class="py-4 px-22 md:py-2 sm:py-2 text-center bg-gray-800 text-white rounded-md focus:outline-none mb-4 resize-none w-full" required></textarea>
+                <button
+                    type="submit" [disabled]="contactForm.invalid"
+                class="bg-blue-500 w-full py-2 px-4 text-white rounded-md hover:bg-blue-600 focus:outline-none">Send</button>
+            </form>
+            <p class="mt-2 text-gray-400 text-sm">We'll get back to you as soon as possible!</p>
+            <div class="mt-4 text-gray-500 text-sm">
+                Powered by <a  class="underline" target="_blank" rel="noopener noreferrer">Mohamed Sherif </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- GitHub Button -->
+
+<!-- jbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb -->
+
+
+
+<!-- رسالة النجاح -->
+
+
